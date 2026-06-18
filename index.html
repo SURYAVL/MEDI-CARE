@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediCare Hospital</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f9ff;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#0077b6;
+z-index:1000;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#90e0ef;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+background:linear-gradient(rgba(0,119,182,.8),rgba(0,119,182,.8)),
+url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:30px;
+line-height:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#00b4d8;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:.4s;
+font-size:18px;
+}
+
+.btn:hover{
+background:white;
+color:#0077b6;
+}
+
+.hero img{
+width:500px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#0077b6;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box{
+background:white;
+padding:35px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+}
+
+.box h2{
+font-size:45px;
+color:#0077b6;
+margin-bottom:10px;
+}
+
+.box p{
+font-size:18px;
+}
+
+.doctors{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card-content h3{
+color:#0077b6;
+margin-bottom:10px;
+}
+
+.card-content p{
+margin-bottom:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+MediCare
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#doctors">Doctors</a>
+<a href="#services">Services</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Your Health,<br>Our Priority</h1>
+
+<p>
+World-class healthcare with experienced doctors,
+modern technology, and compassionate care available
+24×7.
+</p>
+
+<a href="#appointment" class="btn">
+Book Appointment
+</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=700&q=80">
+
+</section>
+
+<section id="about">
+
+<h1 class="title">
+Why Choose Us
+</h1>
+
+<div class="about">
+
+<div class="box">
+<h2>15+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="box">
+<h2>100+</h2>
+<p>Expert Doctors</p>
+</div>
+
+<div class="box">
+<h2>5000+</h2>
+<p>Happy Patients</p>
+</div>
+
+<div class="box">
+<h2>24/7</h2>
+<p>Emergency Care</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="doctors">
+
+<h1 class="title">
+Our Doctors
+</h1>
+
+<div class="doctors">
+
+<div class="card">
+
+<img src="https://t4.ftcdn.net/jpg/06/14/96/05/360_F_614960515_mQsF7nS1r3qZ9eCHzqJ5cyCxmjsfJOCQ.jpg">
+
+<div class="card-content">
+
+<h3>Dr. Teja Srinithi</h3>
+
+<p>Cardiologist</p>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<p>10 Years Experience</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://t4.ftcdn.net/jpg/06/14/96/05/360_F_614960538_tH1wq7P49GQtze75vi7HNyaeo4oaRuKy.jpg">
+
+<div class="card-content">
+
+<h3>Dr. Surya</h3>
+
+<p>Neurologist</p>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<p>8 Years Experience</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://static.vecteezy.com/system/resources/thumbnails/040/193/977/small/puzzled-doctor-flat-style-vector.jpg">
+
+<div class="card-content">
+
+<h3>Dr. Vigneshwaran</h3>
+
+<p>Orthopedic</p>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<p>12 Years Experience</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<h1 class="title">
+Our Services
+</h1>
+
+<div class="about">
+
+<div class="box">
+<h2>❤️</h2>
+<h3>Cardiology</h3>
+<p>
+Complete heart care with advanced diagnosis and treatment.
+</p>
+</div>
+
+<div class="box">
+<h2>🧠</h2>
+<h3>Neurology</h3>
+<p>
+Expert treatment for brain and nervous system disorders.
+</p>
+</div>
+
+<div class="box">
+<h2>🦴</h2>
+<h3>Orthopedics</h3>
+<p>
+Bone, joint and spine specialists for all age groups.
+</p>
+</div>
+
+<div class="box">
+<h2>🦷</h2>
+<h3>Dental Care</h3>
+<p>
+Modern dental treatments with painless procedures.
+</p>
+</div>
+
+<div class="box">
+<h2>👶</h2>
+<h3>Pediatrics</h3>
+<p>
+Healthcare services dedicated to children and newborns.
+</p>
+</div>
+
+<div class="box">
+<h2>👁️</h2>
+<h3>Eye Care</h3>
+<p>
+Advanced eye examination and vision correction.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= APPOINTMENT ================= -->
+
+<section id="appointment">
+
+<h1 class="title">
+Book Appointment
+</h1>
+
+<form id="appointmentForm">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<select id="department" required>
+
+<option value="">
+Select Department
+</option>
+
+<option>
+Cardiology
+</option>
+
+<option>
+Neurology
+</option>
+
+<option>
+Orthopedics
+</option>
+
+<option>
+Dental
+</option>
+
+<option>
+Eye Care
+</option>
+
+<option>
+Pediatrics
+</option>
+
+</select>
+
+<input
+type="date"
+required>
+
+<input
+type="time"
+required>
+
+<textarea
+rows="5"
+placeholder="Describe your health problem">
+</textarea>
+
+<button class="btn" type="submit">
+
+Book Appointment
+
+</button>
+
+</form>
+
+<div
+id="successMessage"
+style="
+display:none;
+margin-top:20px;
+text-align:center;
+font-size:22px;
+color:green;
+font-weight:bold;">
+
+✅ Appointment Booked Successfully!
+
+</div>
+
+</section>
+
+<style>
+
+form{
+
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+form input,
+form select,
+form textarea{
+
+padding:15px;
+font-size:17px;
+border-radius:10px;
+border:1px solid #ccc;
+outline:none;
+
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+
+border:2px solid #0077b6;
+
+}
+
+form button{
+
+border:none;
+cursor:pointer;
+
+}
+
+</style>
+<!-- ================= TESTIMONIALS ================= -->
+
+<section id="testimonials">
+
+<h1 class="title">
+Patient Testimonials
+</h1>
+
+<div class="about">
+
+<div class="box">
+<h2>⭐⭐⭐⭐⭐</h2>
+<p>
+"The doctors are very friendly and professional. Excellent treatment and caring staff."
+</p>
+<br>
+<b>- Ravi Kumar</b>
+</div>
+
+<div class="box">
+<h2>⭐⭐⭐⭐⭐</h2>
+<p>
+"Very clean hospital with modern equipment. Appointment booking was easy."
+</p>
+<br>
+<b>- Priya Sharma</b>
+</div>
+
+<div class="box">
+<h2>⭐⭐⭐⭐⭐</h2>
+<p>
+"I recovered quickly because of the excellent doctors and nurses."
+</p>
+<br>
+<b>- Arjun Patel</b>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h1 class="title">
+Contact Us
+</h1>
+
+<div class="about">
+
+<div class="box">
+
+<h2>📍</h2>
+
+<h3>Address</h3>
+
+<p>
+123 Medical Street,
+Coimbatore,
+Tamil Nadu
+</p>
+
+<br>
+
+<h3>☎ Phone</h3>
+
+<p>+91 9876543210</p>
+
+<br>
+
+<h3>✉ Email</h3>
+
+<p>info@medicarehospital.com</p>
+
+</div>
+
+<div class="box">
+
+<h2>🕒</h2>
+
+<h3>Working Hours</h3>
+
+<p>Monday - Friday</p>
+
+<p>8:00 AM - 9:00 PM</p>
+
+<br>
+
+<p>Saturday</p>
+
+<p>9:00 AM - 6:00 PM</p>
+
+<br>
+
+<p>Sunday</p>
+
+<p>Emergency Only</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>MediCare Hospital</h2>
+
+<br>
+
+<p>
+Providing Quality Healthcare Since 2010
+</p>
+
+<br>
+
+<p>
+
+Home |
+Doctors |
+Services |
+Appointment |
+Contact
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 MediCare Hospital.
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<style>
+
+footer{
+
+background:#023e8a;
+color:white;
+text-align:center;
+padding:50px 20px;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+padding-top:140px;
+height:auto;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+.hero img{
+
+width:100%;
+margin-top:40px;
+
+}
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+display:inline-block;
+margin:10px;
+
+}
+
+.title{
+
+font-size:34px;
+
+}
+
+.hero-text h1{
+
+font-size:42px;
+
+}
+
+}
+
+</style>
+
+<script>
+
+const form=document.getElementById("appointmentForm");
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("successMessage").style.display="block";
+
+form.reset();
+
+setTimeout(function(){
+
+document.getElementById("successMessage").style.display="none";
+
+},4000);
+
+});
+
+</script>
+
+</body>
+</html>
